@@ -12,8 +12,7 @@ public class Class_A {
 
 
 
----------------------------------------------------
-
+------------------
 package JavaAssign;
 
 public class ClassB {
@@ -27,3 +26,5 @@ public class ClassB {
         return varB;
     }
 }
+
+
