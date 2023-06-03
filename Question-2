@@ -1,0 +1,29 @@
+package JavaAssign;
+
+public class Class_A {
+    public static void main(String[] args) {
+        int valueA = 13;
+
+        ClassB instanceB = new ClassB(valueA);
+        System.out.println("Value of variable_B in ClassB: " + instanceB.getVarB());
+    }
+}
+
+
+
+
+---------------------------------------------------
+
+package JavaAssign;
+
+public class ClassB {
+    private int varB;
+
+    public ClassB(int varB) {
+        this.varB = varB;
+    }
+
+    public int getVarB() {
+        return varB;
+    }
+}
