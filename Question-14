@@ -1,0 +1,10 @@
+package JavaAssign;
+
+import java.time.LocalDate;
+
+public class Date_Time  {
+    public static void main(String[] args) {
+        LocalDate myObj = LocalDate.now();
+        System.out.println("Current Date : "+myObj);
+    }
+}
