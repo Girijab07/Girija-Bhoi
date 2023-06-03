@@ -1,0 +1,19 @@
+package JavaAssign;
+
+public class EMP {
+
+        public static void main(String[] args) {
+            int empNo = 123;
+            String empName = "Jadeja";
+            int numberOfEmployees = 100;
+
+            for (int i = 0; i < numberOfEmployees; i++) {
+                int empId = empNo + i;
+                String employeeName = empName + (i + 1);
+
+                System.out.println("Emp No: " + empId + ", Emp Name: " + employeeName);
+            }
+        }
+    }
+
+
