@@ -1,0 +1,23 @@
+package JavaAssign;
+
+public class Print_C {
+
+    public  static void main(String []args){
+
+        int c = 0;
+
+        float a = 7.8f;
+
+        float b = 4.4f;
+
+        System.out.println(c);
+
+
+
+
+    }
+
+
+
+
+    }
