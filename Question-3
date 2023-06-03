@@ -1,0 +1,64 @@
+package JavaAssign;
+
+    class AgeValidation extends Exception {
+        public AgeValidation(String message) {
+            super(message);
+        }
+    }
+
+
+
+----------------------------------------------------------------
+
+package JavaAssign;
+
+public class Age_validation_P {
+    public static void main(String[] args) {
+        Person person = new Person();
+
+        try {
+            // Set age to 15 (below the lower limit)
+            person.setAge(15);
+            System.out.println("Age is: " + person.getAge());
+        } catch (AgeValidation e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try {
+            // Set age to 75 (above the upper limit)
+            person.setAge(75);
+            System.out.println("Age is: " + person.getAge());
+        } catch (AgeValidation e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try {
+            // Set age to 45 (within the valid range)
+            person.setAge(45);
+            System.out.println("Age is: " + person.getAge());
+        } catch (AgeValidation e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+
+
+-----------------------------------
+
+
+package JavaAssign;
+
+class Person {
+    private int age;
+
+    public void setAge(int age) throws AgeValidation {
+        if (age < 25 || age > 55) {
+            throw new AgeValidation("Invalid age! Age must be between 25 and 55.");
+        }
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
