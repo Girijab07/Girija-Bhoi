@@ -1,0 +1,15 @@
+package JavaAssign;
+
+public class Java_Assign_1 {
+    public static void main(String[]args){
+
+       float A = 8.6f;
+        float B =9.7f;
+        float sum = A+B;
+
+        System.out.println("The Sum of two number is :"+sum);
+
+
+    }
+
+}
