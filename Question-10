@@ -1,0 +1,56 @@
+main-class
+-------
+
+package JavaAssign;
+
+public class Access_Private_data {
+
+    public void My_car(){
+        System.out.println("I have a car named Ford");
+    }
+
+    public void MY_Pet(){
+
+        System.out.println("My Pet is Cute");
+    }
+
+
+    }
+
+
+
+--------------------
+My_pet_class
+
+package JavaAssign;
+
+public class My_Pet extends Access_Private_data {
+
+
+    public static void main(String args[]) throws Exception {
+
+
+        My_Pet Pet_obj = new My_Pet();
+        Pet_obj.MY_Pet();
+
+
+    }
+}
+
+-------------------
+
+My_car
+
+
+package JavaAssign;
+
+public class My_car extends Access_Private_data {
+    public static void main(String args[]) throws Exception {
+
+
+        My_car car_obj = new My_car();
+        car_obj.My_car();
+
+
+    }
+}
