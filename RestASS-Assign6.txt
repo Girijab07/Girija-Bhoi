@@ -1,0 +1,24 @@
+package API_Calls;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import static org.hamcrest.Matchers.*;
+
+public class Assign_006 {
+
+    @Test
+    public void testLogoutUser() {
+        // Set base URL
+        RestAssured.baseURI = "https://petstore.swagger.io";
+
+        // Perform GET request and validate response
+        RestAssured.given()
+                .when()
+                .get("/v2/user/logout")
+                .then()
+                .assertThat()
+                //.statusCode(200)
+                .body("code", equalTo(200))
+                .body("message", equalTo("ok"));
+    }
+}
