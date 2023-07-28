@@ -12,3 +12,23 @@ Scenario: Create a new pet
     When method POST
     Then status 200
     And print response
+
+
+--------------------------------------------------------
+To run through Class
+
+package Karate;
+
+import com.intuit.karate.junit5.Karate;
+
+public class assign03 {
+
+    String projectpath=System.getProperty("user.dir").toString();
+
+    @Karate.Test
+    Karate testSample() {
+        return Karate.run(projectpath+"/src/test/featurefile/assign03.feature");
+    }
+
+
+}
