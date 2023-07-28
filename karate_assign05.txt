@@ -14,4 +14,23 @@ Scenario Outline: Verify if pet with a specific ID exists
   |petId|
   | 100 |
 
- 
+
+
+----------------------------------
+run feature file through java class
+-----------------------
+package Karate;
+
+import com.intuit.karate.junit5.Karate;
+
+public class assign05 {
+
+    String projectpath=System.getProperty("user.dir").toString();
+
+    @Karate.Test
+    Karate testSample() {
+        return Karate.run(projectpath+"/src/test/featurefile/assign05.feature");
+    }
+
+
+}
