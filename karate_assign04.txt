@@ -18,3 +18,24 @@ Feature: Match Pet ID, Pet Name, and Status
                 Examples:
                         |petId|
                         | 100 |
+
+
+--------------------------------------------------
+To run through java class
+
+
+package Karate;
+
+import com.intuit.karate.junit5.Karate;
+
+public class assign04 {
+
+    String projectpath=System.getProperty("user.dir").toString();
+
+    @Karate.Test
+    Karate testSample() {
+        return Karate.run(projectpath+"/src/test/featurefile/assign04.feature");
+    }
+
+
+}
