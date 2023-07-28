@@ -14,3 +14,22 @@ Feature: Validate if a pet is deleted
       |petId|
       | 100 |
 
+----------------------------------------
+
+run feature file using java
+
+package Karate;
+
+import com.intuit.karate.junit5.Karate;
+
+public class assign07 {
+
+    String projectpath=System.getProperty("user.dir").toString();
+
+    @Karate.Test
+    Karate testSample() {
+        return Karate.run(projectpath+"/src/test/featurefile/assign07.feature");
+    }
+
+
+}
